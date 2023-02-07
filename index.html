@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://kit.fontawesome.com/8f1d467f50.js" crossorigin="anonymous"></script>    
+    <title>Moosic</title>
+  </head>
+  <body>
+    
+    <!--Header section-->
+    <div class="socials"> 
+      <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://open.spotify.com/"><i class="fa-brands fa-spotify"></i></a>
+      <a href="https://music.apple.com/subscribe"><i class="fa-brands fa-apple"></i></a>    
+    </div>
+
+    <header>
+      <div class="container">
+        <!--Mobile Nav-->
+        <div class="mobile-nav">
+          <a href="#home" class="active">MOOSIC</a>
+          <div id="myLinks">
+            <a class="link" href="#music">MUSIC</a>
+            <a class="link" href="#tour">TOUR</a>
+            <a class="link" href="#band">BAND</a>
+            <a class="link" href="#merch">MERCH</a>
+            <a class="link" href="">NEWS</a>
+            <a class="link" href="#contact">CONTACT</a>
+          </div>
+          <!-- Hamburger menu -->
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>      
+        <!---destop Nav -->
+        <div class="nav-bar">
+          <a class="link" href="#music">MUSIC</a>
+          <a class="link" href="#tour">TOUR</a>
+          <a class="link" href="#band">BAND</a>
+          <a class="link" href="#merch">MERCH</a>
+          <a class="link" href="">NEWS</a>
+          <a class="link" href="#contact">CONTACT</a>
+        </div>
+      </div>
+      <!--logo-->
+      <div class="logo">
+        <img src="./images/moosiclogo.png" alt="logo" />
+      </div>
+    </header>
+
+    <!--Album section-->
+    <div class="container-1">
+      <div class="content">"SELF TITLED" LP</div>
+      <img src="./images/moosicalbumcover.jpg" alt="Moosic Album Cover" />
+      <a class="link" href="">PREORDER NOW</a>
+    </div>
+
+    <!--Music section-->
+    <div class="container-2">
+      <div class="title" id="music">MUSIC</div>
+      <div class="music-player">
+        <div class="player">
+          <img src="./images/moosicalbumcover.jpg" alt="album cover">
+          <h2 id="title">Song Name</h2>
+          <div class="slide-container">
+            <i class="fas fa-volume-down"></i>
+            <input  type="range" min="0" max="100" value="50" class="slider">
+            <i class="fas fa-volume-up"></i>
+          </div>
+          <div class="controls">
+            <button class="previous jump" id="previous"><i class="fas fa-step-backward"></i></button>
+            <button class="play-pause" id="play-pause"><i class="fas fa-play"></i></button>
+            <button class="next jump" id="next"><i class="fas fa-step-forward"></i></button>
+          </div>
+        </div>
+        <div class="playlist">          
+          <div class="playlist-info">
+            <div class="info-left">
+              <h3>Album time:</h3><span id="playlist-time">ERROR</span>
+            </div>
+            <div class="info-right">
+              <h3>Songs:</h3><span id="song-count">ERROR</span>
+            </div>
+          </div>
+          <ul class="song-list">                  
+            <li class="song active" data-src="music\HoliznaCC0 - Ballad of the Last Song Writer.mp3" data-name="Together Forever" data-index="0" data-time="245">
+              <span>Together Forever</span>
+              <span class="song-length" onload="">4:05</span>
+            </li>
+            <li class="song" data-src="music\HoliznaCC0 - Engine Jim.mp3" data-name="So Done With You" data-index="1" data-time="263">
+              <span>So Done With You</span>
+              <span class="song-length">4:23</span>
+            </li>
+            <li class="song" data-src="music\HoliznaCC0 - Fake Tears, the Georgia Years.mp3" data-name="I Actually Still Love You" data-index="2" data-time="237">
+              <span>I Actually Still Love You</span>
+              <span class="song-length">3:57</span>
+            </li>
+            <li class="song" data-src="music\HoliznaCC0 - Girl From the City of Steel.mp3" data-name="Call Me Back Please" data-index="3" data-time="248">
+              <span>Call Me Back Please</span>
+              <span class="song-length">4:08</span>
+            </li>
+            <li class="song" data-src="music\HoliznaCC0 - I'm Gonna' Work.mp3" data-name="Bye Baby Bye" data-index="4" data-time="215">
+              <span>Bye Baby Bye</span>
+              <span class="song-length">3:15</span>
+            </li>
+            <li class="song" data-src="music\HoliznaCC0 - If Only to Kill.mp3" data-name="We Together" data-index="5" data-time="226">
+              <span>We Together</span>
+              <span class="song-length">3:46</span>
+            </li>
+            <li class="song" data-src="music\HoliznaCC0 - Peace Like  a River.mp3" data-name="You Don't Really Love Me" data-index="6" data-time="230">
+              <span>You Don't Really Love Me</span>
+              <span class="song-length">3:50</span>
+            </li>
+          </ul>
+          <audio src="" id="audio"></audio>
+        </div>
+      </div>
+    </div>
+    <!--Tour Section-->
+    <div class="container-3">
+      <div class="title" id="tour">TOUR</div>
+      <div class="tour">
+        <table>
+          <tr>
+            <td>
+              <div class="city">Toronto</div>
+            </td>
+            <td>
+              <div class="date">03.16.23</div>
+            </td>
+            <td>
+              <button><a href="">Get Tickets</a></button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="city">Montreal</div>
+            </td>
+            <td>
+              <div class="date">03.16.23</div>
+            </td>
+            <td>
+              <button><a href="">Get Tickets</a></button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="city">Vancouver</div>
+            </td>
+            <td>
+              <div class="date">03.16.23</div>
+            </td>
+            <td>
+              <button><a href="">Get Tickets</a></button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="city">Edmunton</div>
+            </td>
+            <td>
+              <div class="date">03.16.23</div>
+            </td>
+            <td>
+              <button><a href="">Get Tickets</a></button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="city">Portland</div>
+            </td>
+            <td>
+              <div class="date">03.16.23</div>
+            </td>
+            <td>
+              <button><a href="">Get Tickets</a></button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="city">Seattle</div>
+            </td>
+            <td>
+              <div class="date">03.16.23</div>
+            </td>
+            <td>
+              <button><a href="">Get Tickets</a></button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="city">San Francisco</div>
+            </td>
+            <td>
+              <div class="date">03.16.23</div>
+            </td>
+            <td>
+              <button><a href="">Get Tickets</a></button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="city">Salt Lake City</div>
+            </td>
+            <td>
+              <div class="date">03.16.23</div>
+            </td>
+            <td>
+              <button><a href="">Get Tickets</a></button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="city">Milwaukee</div>
+            </td>
+            <td>
+              <div class="date">03.16.23</div>
+            </td>
+            <td>
+              <button><a href="">Get Tickets</a></button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="city">St. Paul</div>
+            </td>
+            <td>
+              <div class="date">03.16.23</div>
+            </td>
+            <td>
+              <button><a href="">Get Tickets</a></button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+<!--Band Section-->
+    <div class="container-4">
+      <div class="title" id="band">BAND</div>
+      <img src="./images/bandimage.jpg" alt="Band Photo">
+      <h3>
+        We are Moosic.
+      </h3>
+      <p>The world's first Moose Rock band. Think of your favorite soft rock indie band, and then think of the mighty North American Moose. We aren't mooses (Meese?), personally. But we're all from different places where Moose can be found. 
+        Our drummer's from Alaska. Our Singer's from Northen Minnesota. Our bassist is from Manitoba. We make music for those who are powerful but calm, and love the cold. 
+      </p>
+    </div>      
+    <!--Merch Section-->
+    <div class="container-5">
+      <div class="title" id="merch">MERCH</div>
+      <button><a href="">View Store</a></button>
+      <div class="content">
+        <div class="item">
+          <div class="item-title">Album Cover Tee</div>
+          <img src="./images/tshirt1-ablumcover.jpg" alt="album tee" />
+          <div class="price">$35</div>
+        </div>
+        <div class="item">
+          <div class="item-title">Moose Tee</div>
+          <img src="./images/tshirt2-moose.jpg" alt="moose tee"/>
+          <div class="price">$35</div>
+        </div>
+        <div class="item">
+          <div class="item-title">Logo Tote</div>
+          <img src="./images/totebag1-logo.jpg" alt="logo tote" />
+          <div class="price">$25</div>
+        </div>
+      </div>
+    </div>
+
+    <!--Contact Section-->
+    <div class="container-6">
+      <div class="title" id="contact">CONTACT</div>           
+      <div class="form">
+        <form action="#" name="contact_form">
+          <label for="name"></label>
+          <input name="first_name" type="text" required placeholder="Name"/>
+          <br>
+          <label for="email"></label>
+          <input name="email" type="email" required placeholder="Email"/>
+          <br>
+          <label for="message"></label>
+          <br>
+          <textarea name="message" cols="30" rows="10" placeholder="Drop us a lign, eh?" required></textarea>
+          <div class="center">
+            <button class="submit"><a href=""> SUBMIT </a></button>
+          </div>        
+        </form>
+      </div>
+    </div>
+    <!--Footer Section-->
+  <a href="#" class="top">Top &#8593</a>
+  <div class="footer">&copy; Moosic the band 2023</div>
+  <script src="js\script.js"></script>
+</body>
+</html>
