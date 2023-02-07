@@ -491,11 +491,15 @@ font-size: 12pt;
   padding:5px;
   
 }
-     
+
+
 .socials a {
   font-size: 20pt;
 }
-
+i:hover {
+  color: #962106;
+}
+     
 
 /* responsive Styles begin*/
 
